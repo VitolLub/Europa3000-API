@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>    	
+        <add id="Sample_Gridpart2::gridpart2" title="API Sync" module="Sample_Gridpart2" sortOrder="50" dependsOnModule="Sample_Gridpart2" resource="Sample_Gridpart2::gridpart2"/>
+        <add id="Sample_Gridpart2::gridpart2_system" title="API Sync" module="Sample_Gridpart2" sortOrder="10" parent="Sample_Gridpart2::gridpart2" resource="Sample_Gridpart2::gridpart2_system" />
+        <add id="Sample_Gridpart2::gridpart2_template" title="Manage Template" module="Sample_Gridpart2" sortOrder="10" parent="Sample_Gridpart2::gridpart2_system" action="gridpart2/template" resource="Sample_Gridpart2::gridpart2_template"/>
+        
+    </menu>
+</config>
+
